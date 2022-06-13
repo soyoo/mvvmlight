@@ -10,9 +10,7 @@ mvvmlight安装之后，我们可以看到简易的框架布局，如上篇所�
 
 **一、先来说说分层结构：**
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114191102681-2116055667.png)
-
-如图所示：
+![](.gitbook/assets/2-1.png)
 
 1. View，负责前端展示，与ViewModel进行数据、命令的交互。
 2. ViewModel，负责前端视图业务级别的逻辑结构组织，并将其反馈给前端。
@@ -22,7 +20,7 @@ mvvmlight安装之后，我们可以看到简易的框架布局，如上篇所�
 
 先建立一个完整的三层结构目录，如图所示，包含View、ViewModel、Model 三层文件夹：
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114191317900-1517818776.png)
+![](.gitbook/assets/2-2.png)
 
 **1、写一个Model，代码如下：**
 
@@ -152,13 +150,13 @@ namespace MVVMLightDemo.View
 
 **执行效果如下：**
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114192532931-1177736379.png)
+![](.gitbook/assets/2-3.png)
 
 **二、再来说说构造器：**
 
 如果使用NuGet安装的是一个完整的 MVVMLight 框架，而非 MVVMLight Libraries Only 的时候，总是会带上 ViewModelLocator 类，并且将生成的 ResourceDictionary 加入到了全局资源中。
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114192620838-1485478841.png)
+![](.gitbook/assets/2-4.png)
 
 ```xml
 <Application x:Class="MVVMLightDemo.App"
@@ -351,15 +349,15 @@ public WelcomeView()
 
 DataContext="{Binding Source={StaticResource Locator},Path=Welcome}"，如下图所示：
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114193506791-2087253581.png)
+![](.gitbook/assets/2-5.png)
 
 这样做的好处，一个是绑定化相对于简单粗暴的赋值方式，更合理。一个是在可视化窗口中可以看到所绑定的数据，达到所见即所得的友好效果。如下所示：
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114193527150-1058429253.png)
+![](.gitbook/assets/2-6.png)
 
 当我们改掉绑定的数据，编译之后就会立马呈现出来：
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114193550119-541942706.png)
+![](.gitbook/assets/2-7.png)
 
 这样，服务端开发人员可以专心写 ViewModel 的业务逻辑代码，UI开发人员可以专注设计 View 视图了；同样的，ViewModel 可以绑定到不同的视图上，所以，从这边就可以体现出其中的三个重要特性：低耦合、可重用性、独立开发。
 
