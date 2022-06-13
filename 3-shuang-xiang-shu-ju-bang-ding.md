@@ -8,7 +8,7 @@ description: http://www.cnblogs.com/wzh2010/p/6286923.html
 
 表现出的效果很简单：就是在界面的操作对数据模型的修改能实时反映到数据；而数据的变更能实时展现到界面。即视图数据模型（ViewModel）和视图（View）之间的双向绑定和触发。
 
-![](https://images2015.cnblogs.com/blog/167509/201702/167509-20170203170030823-104653934.png)
+![](.gitbook/assets/3-1.png)
 
 我们来操作一个试试看：
 
@@ -213,7 +213,7 @@ namespace MVVMLightDemo.ViewModel
 
 效果如图所示（当修改输入框的内容的时候，对应绑定数据相应改变，并触发对UI的修改，所以下面那行文字也相应改变了。）：
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170115123001603-111562473.png)
+![](.gitbook/assets/3-2.png)
 
 前面我们已经了解到了，RaisePropertyChanged 的作用是当数据源改变的时候，会触发PropertyChanged 事件达到通知 UI 更改的目的（ViewModel => View）。那么，当 View 发生变化的时候，要怎么通知到 ViewModel 数据源呢？
 
