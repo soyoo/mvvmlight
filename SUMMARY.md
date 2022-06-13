@@ -1,6 +1,6 @@
 # Table of contents
 
-* [利刃 mvvmlight](README.md)
+* [mvvmlight](README.md)
 * [1 mvvmlight介绍以及在项目中的使用](1-mvvmlight-jie-shao-yi-ji-zai-xiang-mu-zhong-de-shi-yong.md)
 * [2 Model、View、ViewModel结构以及全局视图模型注入器的说明](2-modelviewviewmodel-jie-gou-yi-ji-quan-ju-shi-tu-mo-xing-zhu-ru-qi-de-shuo-ming.md)
 * [3 双向数据绑定](3-shuang-xiang-shu-ju-bang-ding.md)
