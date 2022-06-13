@@ -14,7 +14,7 @@ MVVM是Model-View-ViewModel的简写。类似于目前比较流行的MVC、MVP�
 
 结构如图所示:
 
-![](.gitbook/assets/167509-20170114185837760-204621643.png)
+![](.gitbook/assets/1-1.png)
 
 相对于之前把逻辑结构写在Code Behind 里面的方式，MVVM几乎完全解耦了视图和逻辑业务之间的关系，通过数据绑定和命令来处理UI属性及事件驱动。同理，ViewModel的视图交互业务逻辑处理导致的属性变更也会通知到View前端，让View前端实时更新。Model中存放数据模型、数据逻辑和业务逻辑。
 
@@ -37,7 +37,7 @@ MVVMLight的作者Laurent Bugnion 是个微软MVP，这个是MVVMLight的官网�
 
 有趣的是，MVVMLight的产品Logo是一根羽毛，寓意了我们上面提到的优点：轻量、专业、高效，不知道作者是不是这个意思。
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114190521572-390293826.png)
+![](.gitbook/assets/1-2.png)
 
 **二、如何在你的WPF应用中使用MVVMLight**
 
@@ -53,8 +53,10 @@ MVVMLight的作者Laurent Bugnion 是个微软MVP，这个是MVVMLight的官网�
 
 Nuget上这两个项目的区别就是MVVM Light除了必要的GalaSoft 组件之外，还会额外添加相关分层文件目录，形成简单的MVVMLight成型框架。
 
-![](https://images2015.cnblogs.com/blog/167509/201701/167509-20170114190711275-1764058983.jpg)
+![](.gitbook/assets/1-3.jpg)
 
 如图，它会帮你生成ViewModel文件夹，里面包含MainViewModel和ViewModelLocator文件。
+
+![](.gitbook/assets/1-4.jpg)
 
 至此，一个基于MVVMLight的WPF项目框架基本搭建完成了，下面一篇，我们将详细说下框架的结构。
