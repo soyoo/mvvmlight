@@ -28,7 +28,7 @@ description: http://www.cnblogs.com/wzh2010/p/6425060.html
 </StackPanel>
 ```
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306134350406-1809373993.png)
+![](.gitbook/assets/4-1.png)
 
 TextBlock 绑定了名称为 WelcomeText 的 TextBox 元素，并且，将 Path 指向它的 Text 属性，所以，它的值会跟着 WelcomeText 的值变化而变化。
 
@@ -61,7 +61,7 @@ TextBlock 绑定了名称为 WelcomeText 的 TextBox 元素，并且，将 Path 
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170305171027423-1289455236.png)
+![](.gitbook/assets/4-2.png)
 
 **2.2 RelativeSource 属性：设置该属性 可以根据当前目标对象的相对关系指向源目标。比如，获取当前对象的父亲对象、兄弟对象或者自身的其它属性等一些数据。**
 
@@ -102,9 +102,11 @@ TextBlock 绑定了名称为 WelcomeText 的 TextBox 元素，并且，将 Path 
 
 注意：AncestorType 指得是查找的对象类型，AncestorLevel 代表搜索的层级的位置，如果是3，则忽略前两个发现的元素。
 
-结果： ![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170305173419938-90774974.png)
+结果：
 
-**2.3 DataContext 属性：如果想将一个对象绑定到一个由多个元素组成的视图块或者复合元素中，用DataContext 会更好开发和维护。**
+![](.gitbook/assets/4-3.png)
+
+&#x20;**2.3 DataContext 属性：如果想将一个对象绑定到一个由多个元素组成的视图块或者复合元素中，用DataContext 会更好开发和维护。**
 
 如下所示：
 
@@ -228,7 +230,7 @@ ViewModel 代码：
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306165145656-499338194.png)
+![](.gitbook/assets/4-4.png)
 
 **2、单选框**
 
@@ -262,7 +264,7 @@ ViewModel 代码：
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306164248094-751508962.png)
+![](.gitbook/assets/4-5.png)
 
 **3、组合单选框**
 
@@ -304,7 +306,7 @@ ViewModel 代码：
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306165428359-315615400.png)
+![](.gitbook/assets/4-6.png)
 
 **4、复选框，复选框与单选框的使用情况类似：**
 
@@ -336,7 +338,7 @@ ViewModel 代码：
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306165937234-169007174.png)
+![](.gitbook/assets/4-7.png)
 
 **5、树形控件**
 
@@ -478,7 +480,7 @@ private void InitListBoxList()
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306171544594-1926463459.png)
+![](.gitbook/assets/4-9.png)
 
 **7、用户控件的集合绑定：**
 
@@ -552,10 +554,8 @@ xmlns:Content="clr-namespace:MVVMLightDemo.Content"
 
 结果：
 
-![](https://images2015.cnblogs.com/blog/167509/201703/167509-20170306173021516-903248935.png)
+![](.gitbook/assets/4-10.png)
 
 后记：这篇更确切的说是绑定的相关知识，只是应用了MVVM模式来实现。
 
 工作太忙了，写的太慢，其实后面几篇都已经成稿了，一直放在Note里面等待认真检查，品质太差怕误导其他开发人员。
-
-#### 利刃 MVVMLight 5：绑定在表单验证 <a href="#li-ren-mvvmlight5-bang-ding-zai-biao-dan-yan-zheng" id="li-ren-mvvmlight5-bang-ding-zai-biao-dan-yan-zheng"></a>
